@@ -1,2 +1,17 @@
-<h1>Books#index</h1>
-<p>Find me in app/views/books/index.html.erb</p>
+<h1>Books</h1>
+
+<%= form_with model:  @books do |f| %>
+
+  <p>Title</p>
+  <span><%= book.title %></span>
+  
+  <p>Body</p>
+  <span><%= book.body %></span>
+  
+  <a>Show</a>
+  <a>Edit</a>
+  <a>Destroy</a>
+  
+<% end %>
+
+
