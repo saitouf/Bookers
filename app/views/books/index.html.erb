@@ -1,6 +1,6 @@
 <h1>Books</h1>
 
-<%= form_with model:  @books do |f| %>
+<% @books.each do |book| %>
 
   <p>Title</p>
   <span><%= book.title %></span>
@@ -9,8 +9,8 @@
   <span><%= book.body %></span>
   
   <a>Show</a>
-  <a>Edit</a>
-  <a>Destroy</a>
+  <a href="/books/edit">Edit</a>
+  <!--%= link_to 'Destroy' book_path(@book.id), method: :delite, "deta-confirm" => "Are you sure?" %-->
   
 <% end %>
 
