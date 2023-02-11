@@ -1,5 +1,5 @@
 <h1>Books</h1>
-
+<table>
 <% @books.each do |book| %>
 
   <p>Title</p>
@@ -13,5 +13,8 @@
   <%= link_to 'Destroy', book_path(book.id), method: :delete,  "data-confirm" => "Are you sure?" %>
   
 <% end %>
+</table>
+
+
 
 
